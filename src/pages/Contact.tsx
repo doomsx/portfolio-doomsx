@@ -1,7 +1,7 @@
 
 function Contact() {
     return (
-        <div>Contact</div>
+        <section className="h-screen" id="Contact">Contact</section>
     )
 }
 

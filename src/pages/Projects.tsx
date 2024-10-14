@@ -1,7 +1,7 @@
 
 function Projects() {
     return (
-        <div>Projects</div>
+        <section className="h-screen" id="Projects">Projects</section>
     )
 }
 

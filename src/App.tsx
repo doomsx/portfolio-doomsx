@@ -1,7 +1,21 @@
+import Footer from "./components/Footer"
+import Navbar from "./components/Navbar"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+import Hero from "./pages/Hero"
+import Projects from "./pages/Projects"
 
 function App() {
+
     return (
-        <h1 className="text-5xl font-bold text-center">Hello World</h1>
+        <>
+            <Navbar />
+            <Hero />
+            <About />
+            <Projects />
+            <Contact />
+            <Footer />
+        </>
     )
 }
 
