@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply scroll-smooth
+}
 
 body {
     @apply bg-dark text-light
+}
+
+.navLink {
+    @apply px-3 py-2 hover:underline hover:underline-offset-8 hover:decoration-[#64ffda]
 }
