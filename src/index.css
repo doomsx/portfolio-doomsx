@@ -13,3 +13,7 @@ body {
 .navLink {
     @apply px-3 py-2 hover:underline hover:underline-offset-8 hover:decoration-[#64ffda]
 }
+
+.contactLinks {
+    @apply border flex items-center gap-2 px-5 py-3 rounded-xl backdrop-blur-md justify-between hover:bg-accent/10
+}
