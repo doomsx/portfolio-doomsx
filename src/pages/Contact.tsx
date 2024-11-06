@@ -3,8 +3,11 @@ import ContactForm from "../components/ContactForm";
 
 function Contact() {
   return (
-    <section className="h-screen flex justify-center items-center" id="Contact">
-      <div className="flex flex-col md:flex-row gap-3 w-full px-10">
+    <section
+      className="md:flex md:justify-center md:items-center"
+      id="Contact"
+    >
+      <div className="flex flex-col gap-3 px-0 md:flex-row md:w-full md:px-10">
         <ContactForm />
         <ContactDetails />
       </div>

@@ -15,7 +15,7 @@ function SkillsCard({
 
   return (
     <div
-      className="h-[110px] w-[110px] flex flex-col items-center justify-center gap-3 flex-wrap border rounded-md border-white backdrop-blur-lg"
+      className="border rounded-md flex flex-col justify-center items-center py-3 px-6 md:h-[110px] md:w-[110px]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -24,7 +24,7 @@ function SkillsCard({
       }}
     >
       <img src={icon} alt={altText} className="h-[35px] w-[35px]" />
-      <p className={` text-sm`} style={{ color: isHovered ? color : "white" }}>
+      <p className={`text-base`} style={{ color: isHovered ? color : "white" }}>
         {title}
       </p>
     </div>

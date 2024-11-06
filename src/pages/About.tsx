@@ -10,12 +10,13 @@ import tailwind from "/tailwind.svg";
 
 function About() {
   return (
-    <section className="h-screen flex justify-center flex-col" id="About">
-      <h1 className="text-center text-accent font-black text-5xl">About me</h1>
-      <div className="flex text-center w-full flex-col items-center justify-center gap-10">
-        <div className="text-center w-[950px] mt-10">
-          <p className="text-xl text-left">
-            {" "}
+    <section className="h-screen flex justify-center flex-col px-3" id="About">
+      <h1 className="text-center text-accent text-2xl font-extrabold md:font-black md:text-5xl">
+        About me
+      </h1>
+      <div className="flex text-center w-full flex-col items-center justify-center md:gap-10">
+        <div className="md:text-center md:w-[950px] my-5">
+          <p className="md:text-xl md:text-left px-3">
             A passionate aspiring front-end developer on a journey to master the
             art of crafting beautiful and functional websites. From responsive
             designs to performance optimization, I enjoy the challenges of
@@ -24,11 +25,11 @@ function About() {
             to learn and grow in the world of web development.
           </p>
         </div>
-        <div className="flex gap-2 flex-col w-[950px]">
-          <h2 className="font-bold text-3xl text-light text-left">
+        <div className="flex gap-1 flex-col md:w-[950px] mt-5">
+          <h2 className="text-left font-bold text-xl text-accent/90 md:text-3xl text-light md:text-left">
             Technology I use
           </h2>
-          <div className="grid grid-cols-8 gap-4 mt-5">
+          <div className="grid grid-cols-4 gap-2 md:grid-cols-8 mt-2 md:gap-4 md:mt-5">
             <SkillsCard
               title={"HTML5"}
               icon={htmlLogo}

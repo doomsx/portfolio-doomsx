@@ -14,7 +14,7 @@ body {
   @apply px-3 py-2 hover:underline hover:underline-offset-8 hover:decoration-[#64ffda];
 }
 .resumeLink {
-  @apply px-3 py-2 border border-white hover:border-[#64ffda];
+  @apply px-3 py-2 border border-white hover:border-[#64ffda] self-end;
 }
 
 .contactLinks {

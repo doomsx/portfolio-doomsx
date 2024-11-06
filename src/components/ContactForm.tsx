@@ -1,9 +1,11 @@
 function ContactForm() {
   return (
-    <div className="w-1/2 flex flex-col">
-      <h1 className="text-3xl font-bold text-center mt-1">Send me a message</h1>
-      <form className=" w-full px-10 py-2 mt-8">
-        <div className="flex flex-col gap-2 mb-4">
+    <div className="p-2 flex flex-col md:px-0 md:w-1/2">
+      <h1 className="text-xl text-center font-semibold md:text-3xl md:font-bold md:mt-1">
+        Send me a message
+      </h1>
+      <form className="w-full px-3 md:px-10 md:py-2 md:mt-8">
+        <div className="flex flex-col gap-2 md:mb-4">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -14,7 +16,7 @@ function ContactForm() {
           />
         </div>
         <div className="flex flex-col gap-2 mb-4">
-          <label htmlFor="Name">Name: </label>
+          <label htmlFor="Name">Name</label>
           <input
             type="text"
             name="name"
