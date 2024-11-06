@@ -6,8 +6,8 @@ import mailLogo from "/protonmail-color.svg";
 
 function ContactDetails() {
   return (
-    <div className="mb-2 px-5 py-2 md:w-1/2">
-      <h1 className="text-3xl font-bold text-center">
+    <div className="mt-5 mb-2 px-5 py-2 md:w-1/2">
+      <h1 className="text-xl md:text-3xl font-bold text-center">
         Connect With Me Through
       </h1>
       <div className="flex flex-col mt-10 gap-5">
