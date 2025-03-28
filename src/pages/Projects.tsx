@@ -2,14 +2,15 @@ import nextLogo from "/nextdotjs.svg"
 import tailwindLogo from "/tailwind.svg"
 import githubLogo from "/github.svg"
 import { CiGlobe } from "react-icons/ci";
+import weather from "/weather.png"
 
 function Projects() {
     return (
         <section className="h-screen flex items-center justify-center flex-col" id="Projects">
             <h1 className="text-5xl font-black text-accent">Projects</h1>
-            <div className="mt-10 flex md:flex-row flex-col gap-3 items-center justify-center max-w-1/2 mx-10 md:mx-20 md:p-10 border border-white/10 bg-gray-600/10 rounded-xl backdrop-blur-xl">
+            <div className="mt-10 flex md:flex-row flex-col gap-3 items-center justify-center max-w-1/2 mx-10 md:mx-20 md:p-10 py-5 border border-white/10 bg-gray-600/10 rounded-xl backdrop-blur-xl">
                 <div className="w-1/2">
-                    Image
+                    <img src={weather} alt="weather pic" />
                 </div>
                 <div className="w-1/2 space-y-5">
                     <h2 className="text-xl font-bold">Weather App</h2>
