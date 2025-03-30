@@ -37,14 +37,13 @@ function ContactForm() {
             <h1 className="text-xl text-center font-semibold md:text-3xl md:font-bold md:mt-1">
                 Send me a message
             </h1>
-            {message && <p className="text-center mt-2">{message}</p>}
             <form ref={formRef} onSubmit={submitForm} className="w-full px-3 md:px-10 md:py-2 md:mt-8">
                 <div className="flex flex-col gap-2 md:mb-4">
                     <label htmlFor="email">Email</label>
                     <input
                         type="email"
-                        name="email"
-                        id="email"
+                        name="user_email"
+                        id="user_email"
                         placeholder="ex. example@example.com"
                         className="bg-transparent border rounded-lg px-3 py-2 backdrop-blur-lg"
                         required
@@ -54,8 +53,8 @@ function ContactForm() {
                     <label htmlFor="name">Name</label>
                     <input
                         type="text"
-                        name="name"
-                        id="name"
+                        name="user_name"
+                        id="user_name"
                         placeholder="ex. John Doe"
                         className="bg-transparent border rounded-lg px-3 py-2 backdrop-blur-lg"
                         required
@@ -79,6 +78,7 @@ function ContactForm() {
                 >
                     {loading ? "Sending..." : "Send"}
                 </button>
+                {message && <p className="text-center text-lg font-bold mt-2">{message}</p>}
             </form>
         </div>
     );
