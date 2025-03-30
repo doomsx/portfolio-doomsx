@@ -30,7 +30,7 @@ function Projects() {
                                 <img src={githubLogo} alt="githubLogo" className="w-5 h-5" />
                                 <p className="text-sm hidden md:block">Source Code</p>
                             </a>
-                            <a href="#" target="_blank" className="projectLinks">
+                            <a href="https://domss-weather-app.vercel.app/" target="_blank" className="projectLinks">
                                 <CiGlobe className="text-lg" />
                                 <p className="text-sm hidden md:block">Live Website</p>
                             </a>
