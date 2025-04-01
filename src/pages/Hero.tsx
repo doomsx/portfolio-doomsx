@@ -1,5 +1,6 @@
 import { DiGithubBadge } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa";
+
 function Hero() {
     return (
         <section className="h-screen" id="Home">
@@ -11,7 +12,7 @@ function Hero() {
                 <h3 className="md:text-5xl text-xl font-semibold">
                     Frontend Developer
                 </h3>
-                <div className="flex gap-2 mt-3 md:mt-6">
+                <div className="flex gap-2 mt-3 flex-col md:flex-row md:mt-6">
                     <a href="https://github.com/doomsx" target="_blank" className="heroLinks group">
                         <DiGithubBadge className="text-xl md:text-3xl group-hover:text-gray-100" />
                         <span>Github</span>
@@ -22,7 +23,7 @@ function Hero() {
                         <span>Linkedin</span>
                     </a>
                 </div>
-            </div>
+            </div >
         </section>
     );
 }
