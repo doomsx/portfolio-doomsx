@@ -1,7 +1,7 @@
 import fbLogo from "/facebook-color.svg";
 import linkedinLogo from "/linkedin-color.svg";
 import githubLogo from "/github.svg";
-import mailLogo from "/protonmail-color.svg";
+import { IoIosMail } from "react-icons/io";
 
 function ContactDetails() {
     return (
@@ -39,8 +39,8 @@ function ContactDetails() {
                     className="contactLinks"
                     target="_blank"
                 >
-                    <img src={mailLogo} alt="" className="h-5 w-5" />
-                    dlmagat08@proton.me
+                    <IoIosMail className="text-2xl" />
+                    dlmagat08@gmail.com
                 </a>
             </div>
         </div>
