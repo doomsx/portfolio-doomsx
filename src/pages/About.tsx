@@ -1,13 +1,5 @@
 import SkillsCard from "../components/SkillsCard";
-import htmlLogo from "/html.svg";
-import cssLogo from "/css.svg";
-import javascript from "/js.svg";
-import typescript from "/ts.svg";
-import react from "/react.svg";
-import git from "/git.svg";
-import github from "/github.svg";
-import tailwind from "/tailwind.svg";
-import nextjs from "/nextdotjs.svg"
+import { skills, skillsType } from "../lib/types";
 
 function About() {
     return (
@@ -31,60 +23,14 @@ function About() {
                         Technology I use
                     </h2>
                     <div className="grid grid-cols-4 gap-2 md:grid-cols-8 mt-2 md:gap-4 md:mt-5">
-                        <SkillsCard
-                            title={"HTML5"}
-                            icon={htmlLogo}
-                            color={"#E34C26"}
-                            altText={"HTML logo"}
-                        />
-                        <SkillsCard
-                            title={"CSS3"}
-                            icon={cssLogo}
-                            color={"#1172b8"}
-                            altText={"CSS logo"}
-                        />
-                        <SkillsCard
-                            title={"Javascript"}
-                            icon={javascript}
-                            color={"#f0db4f"}
-                            altText={"Javascript logo"}
-                        />
-                        <SkillsCard
-                            title={"Typescript"}
-                            icon={typescript}
-                            color={"#007acc"}
-                            altText={"Typescript logo"}
-                        />
-                        <SkillsCard
-                            title={"React"}
-                            icon={react}
-                            color={"#61DBFB"}
-                            altText={"React logo"}
-                        />
-                        <SkillsCard
-                            title={"Tailwind"}
-                            icon={tailwind}
-                            color={"#68c7f0"}
-                            altText={"Tailwind logo"}
-                        />
-                        <SkillsCard
-                            title={"Git"}
-                            icon={git}
-                            color={"#F1502F"}
-                            altText={"Git logo"}
-                        />
-                        <SkillsCard
-                            title={"Github"}
-                            icon={github}
-                            color="#ffffff"
-                            altText={"Github logo"}
-                        />
-                        <SkillsCard
-                            title={"Nextjs"}
-                            icon={nextjs}
-                            color="#000000"
-                            altText={"next js logo"}
-                        />
+                        {skills.map((s: skillsType) => (
+                            <SkillsCard
+                                title={s.skill}
+                                icon={s.logo}
+                                color={s.color}
+                                altText={s.skill}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
