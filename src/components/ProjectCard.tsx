@@ -6,7 +6,7 @@ const ProjectCard = ({ proj }: { proj: proj }) => {
     return (
         <div className="mt-10 flex md:flex-row flex-col gap-3 items-center justify-center max-w-1/2 mx-10 md:mx-20 md:p-10 py-5 border border-white/10 bg-gray-600/10 rounded-xl backdrop-blur-xl">
             <div className="px-3 md:w-1/2">
-                <img src={proj.img} alt="weather pic" />
+                <img src={proj.img} alt="project photo" />
             </div>
             <div className="md:w-1/2 space-y-5 px-3">
                 <h2 className="text-xl font-bold">{proj.title}</h2>
