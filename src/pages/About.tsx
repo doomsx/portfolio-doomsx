@@ -3,7 +3,7 @@ import { skills, skillsType } from "../lib/types";
 
 function About() {
     return (
-        <section className="h-screen flex justify-center flex-col px-3" id="About">
+        <section className="flex justify-center flex-col px-3" id="About">
             <h1 className="text-center text-accent text-2xl font-extrabold md:font-black md:text-5xl">
                 About me
             </h1>
